@@ -2,5 +2,5 @@ from utils import runCmd
 
 
 def getHostInfo():
-    runCmd("hostnamectl")
+    runCmd("ls", "-la")
 
