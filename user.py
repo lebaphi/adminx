@@ -10,11 +10,10 @@ def getSystemUser(inputGroup=None):
         runCmd(
             "getent group "
             + inputGroup
-            + "|awk -F: '{print $4}'|tr ',' '\n'|awk '$0="
-            - "$0'"
+            + "|awk -F: '{print $4}'|tr ',' '\n'|awk '$0= - $0'"
         )
 
 
 def getUserTree(user):
     print("Directory list for user: " + user)
-    runCmd("tree", "/home/" + user)
+    runCmd("tree /home/" + user)
