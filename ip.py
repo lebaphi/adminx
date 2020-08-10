@@ -1,4 +1,5 @@
-import socket
+import socketclear
+from utils import runCmd
 
 
 def getIPInterface(interface):
