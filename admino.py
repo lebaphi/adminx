@@ -4,8 +4,8 @@ from host import getHostInfo
 from ip import getIPInterface, getLastRemoteIp
 from user import getSystemUser, getUserTree
 from processes import getProcessRunning
-from sudocmd import getListSudoCMD
-from distintive import distintiveFunc
+from sudo import getListSudoCMD
+from distint import distintFunc
 
 
 def main(argv):
@@ -44,7 +44,7 @@ def main(argv):
             getListSudoCMD()
             sys.exit()
         elif opt == "-d":
-            distintiveFunc()
+            distintFunc()
             sys.exit()
 
 
