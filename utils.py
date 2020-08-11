@@ -2,5 +2,5 @@ import os
 
 
 def runCmd(cmd):
-    os.system(cmd)
+    os.system(cmd) 
 

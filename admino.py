@@ -18,34 +18,25 @@ def main(argv):
     for opt, arg in opts:
         if opt == "--help":
             getUsage()
-            sys.exit()
         elif opt == "-h":
             getHostInfo()
-            sys.exit()
         elif opt == "-i":
             getIPInterface(arg)
-            sys.exit()
         elif opt == "-u":
             getSystemUser()
-            sys.exit()
         elif opt == "-g":
             getSystemUser(arg)
-            sys.exit()
         elif opt == "-t":
             getUserTree(arg)
-            sys.exit()
         elif opt == "-l":
             getLastRemoteIp()
-            sys.exit()
         elif opt == "-p":
             getProcessRunning()
-            sys.exit()
         elif opt == "-s":
             getListSudoCMD()
-            sys.exit()
         elif opt == "-d":
             distintFunc()
-            sys.exit()
+    sys.exit()
 
 
 if __name__ == "__main__":

@@ -1,6 +1,9 @@
-from utils import runCmd
+import subprocess
 
 
 def getListSudoCMD():
-    runCmd("history")
+    result = subprocess.run(
+        "bash -i -c  'history -r;history' ", stdout=subprocess.PIPE, shell=True, universal_newlines=True, check=True
+    )
+    print(result.stdout)
 
